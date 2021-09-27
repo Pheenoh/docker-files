@@ -1,1 +1,3 @@
 *.iso
+mwcc_compiler/
+*.dol
