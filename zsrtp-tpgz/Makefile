@@ -16,3 +16,6 @@ build:
 	@cd GCN_PAL && $(call buildImage,gcn_pal) && $(call pushImage,gcn_pal)
 	@cd GCN_NTSCJ && $(call buildImage,gcn_ntscj) && $(call pushImage,gcn_ntscj)
 	@cd WII_NTSCU_10 && $(call buildImage,wii_ntscu_10) && $(call pushImage,wii_ntscu_10)
+	@cd WII_NTSCU_12 && $(call buildImage,wii_ntscu_12) && $(call pushImage,wii_ntscu_12)
+	@cd WII_PAL && $(call buildImage,wii_pal) && $(call pushImage,wii_pal)
+	@cd WII_NTSCJ && $(call buildImage,wii_ntscj) && $(call pushImage,wii_ntscj)
