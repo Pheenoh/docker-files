@@ -1,6 +1,6 @@
 FROM ghcr.io/pheenoh/devkitppc-gcn:latest
 RUN dpkg --add-architecture i386
-RUN apt update && apt install build-essential wine wine32 python3 python3-distutils -y
+RUN apt update && apt install build-essential wine wine32 python3 python3-distutils git -y
 
 # Install python dependencies
 RUN curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py
