@@ -1,11 +1,11 @@
 define buildImage
-	docker build . -t ghcr.io/pheenoh/zsrtp-tpgz:$(1)
+	docker build . -t ghcr.io/zsrtp/zsrtp-tpgz:$(1)
 endef
 
 # Set the token in your env before running, otherwise this will fail
 define pushImage
 	echo $(GHCR_TOKEN) | docker login ghcr.io -u USERNAME --password-stdin
-	docker push ghcr.io/pheenoh/zsrtp-tpgz:$(1)
+	docker push ghcr.io/zsrtp/zsrtp-tpgz:$(1)
 endef
 
 all: build

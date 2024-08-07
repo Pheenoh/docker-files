@@ -1,4 +1,4 @@
-FROM ghcr.io/pheenoh/zsrtp-tpgz:base
+FROM ghcr.io/zsrtp/zsrtp-tpgz:base
 
 COPY GZ2J01.iso /
 
